@@ -1,0 +1,124 @@
+body{
+    font-family: 'Instrument Serif', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("pictures/background-image.png");
+}
+
+/*Meny*/
+header{
+    font-family: 'Julius Sans One', sans-serif;
+    background-color: #FFF2CC;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    display: grid;
+    grid-template-columns: 70% 15% 15%;
+}
+
+header img{
+    width: 5%;
+    height: auto;
+    margin: 2% 1.5%;
+}
+
+.item1{
+    grid-column: 1;
+    display: flex;
+    align-items: center;   
+}
+
+.item2{
+    grid-column: 2;
+    display: flex;
+    align-items: center; 
+    justify-content: start; 
+}
+
+.item3{
+    grid-column: 3;
+    display: flex;
+    align-items: center;  
+    justify-content: start;
+}
+
+.item2 a, .item3 a{
+    font-size: 0.3rem;
+    color: #5F3917;
+    text-decoration: none;
+}
+
+
+
+/*Rubriker*/
+h1, h4{
+    font-family: 'Italianno', sans-serif;
+    font-weight: 200;
+}
+
+/*Konditori Mill - Sektion*/
+#konditori-mill{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.konditori-mill-container{
+    display: grid;
+    background-color: rgba(255, 242, 204, 0.5);
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: #C8EBCB;
+    width: 85%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+    margin-top: 10%;
+}
+
+.mill-item1{
+    grid-row: 1 / span 2;
+    grid-column: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mill-item2{
+    grid-row: 1 / span 4;
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.mill-item3{
+    grid-row: 3 / span 6;
+    grid-column: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.mill-item3 p{
+    width: 75%;                
+    text-align: center;        
+}
+
+.mill-item4{
+    grid-row: 5 / span 4;
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mill-item2 img, .mill-item4 img{
+    width: 70%;
+    height: auto;
+    border-radius: 5px;
+    margin: 3%;
+}
+
+p{
+    font-size: 0.25rem;
+}
+

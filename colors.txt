@@ -1,0 +1,24 @@
+Ljusorange
+#FFF2CC
+
+Brun
+#5F3917
+
+Mintgrön
+#C8EBCB
+
+Grön
+#A1DAA6
+
+Rosa
+#FED3DA
+
+Ljusrosa
+#FFF5F5
+
+Bakgrund
+Ljusgul
+#FEFFE2
+
+Ljusgul mörkare
+#FEFFD8
