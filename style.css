@@ -3,13 +3,40 @@ body{
     margin: 0;
     padding: 0;
     background-image: url("pictures/background-image.png");
+    color: #5F3917
+}
+
+/*Länkar*/
+a{
+    color: #5F3917;
+    text-decoration: none;
+    font-family: 'Instrument Serif', sans-serif;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+
+
+/*Rubriker*/
+h2, h4, h5{
+    font-weight: 200;
+}
+h4{
+    font-family: 'Italianno', sans-serif;
+    font-size: 3.5rem;
+}
+
+h2{
+    font-family: 'Instrument Serif', sans-serif;
+    text-align: center;
+    font-size: 5rem;
 }
 
 /*Meny*/
 header{
-    font-family: 'Julius Sans One', sans-serif;
     background-color: #FFF2CC;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 5px rgba(0,0,0,0.1);
     display: grid;
     grid-template-columns: 70% 15% 15%;
 }
@@ -41,32 +68,25 @@ header img{
 }
 
 .item2 a, .item3 a{
-    font-size: 0.3rem;
-    color: #5F3917;
-    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: 'Julius Sans One', sans-serif;
 }
 
 
 
-/*Rubriker*/
-h1, h4{
-    font-family: 'Italianno', sans-serif;
-    font-weight: 200;
-}
 
 /*Konditori Mill - Sektion*/
 #konditori-mill{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
 }
 
 .konditori-mill-container{
     display: grid;
     background-color: rgba(255, 242, 204, 0.5);
-    border-radius: 10px;
-    border: 1px solid;
+    border-radius: 50px;
+    border: 5px solid;
     border-color: #C8EBCB;
     width: 85%;
     grid-template-columns: 50% 50%;
@@ -100,7 +120,8 @@ h1, h4{
 
 .mill-item3 p{
     width: 75%;                
-    text-align: center;        
+    text-align: start;  
+    margin-left: 3%;      
 }
 
 .mill-item4{
@@ -114,11 +135,185 @@ h1, h4{
 .mill-item2 img, .mill-item4 img{
     width: 70%;
     height: auto;
-    border-radius: 5px;
+    border-radius: 25px;
     margin: 3%;
 }
 
 p{
-    font-size: 0.25rem;
+    font-size: 1.25rem;
+    position: relative;
+    top: -5%;
 }
 
+/*Våra tjänster - Sektion*/
+#ourServices{
+    background-image: url("pictures/services.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+#ourServices h2{
+    color: #FEFFE2;
+    padding-top: 15%
+}
+
+.services-container{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding-bottom: 10%;
+}
+
+.service-items{
+    background-color: #FEFFE2;
+    display: block;
+    width: 70%;
+    text-align: center;
+    margin: 0 15%;
+    border-radius: 25px;
+    height: 95%;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+}
+
+.service-items h5{
+    margin: 7%;
+    color: #FED3DA;
+    font-size: 3.5rem;
+}
+
+.service-items p{
+    padding: 7%;
+}
+
+.service-item1{
+    grid-column: 1;
+}
+
+.service-item2{
+    grid-column: 2;
+}
+
+
+.service-item3{
+    grid-column: 3;
+}
+
+.service-item4{
+    grid-column: 4;
+}
+
+/*Våra anställda - Sektion*/
+.employees-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}
+
+#employees h2{
+    color: #FED3DA;
+    padding-top: 10%;
+}
+
+.employee-items{
+    background-color: #FFF5F5;
+    width: 60%;
+    border: 5px solid;
+    border-color: #FED3DA;
+    border-radius: 50px;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    display: grid;
+    grid-template-rows: 25% 25% 50%;
+    grid-template-columns: 50% 50%;
+    height: 500px;
+}
+
+.employee-items h5{
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+.employee-items p{
+    width: 80%;
+    text-align: left;
+    margin: 0 12%;
+    font-size: 1.5rem;
+}
+
+
+.employee-item1{
+    grid-column: 1;
+    grid-row: 1;
+    margin: 10% 10% 10% 30%;
+}
+
+.employee-item2{
+    grid-column: 2;
+    grid-row: 1;
+    margin: 10% 30% 10% 10%;
+}
+
+
+.employee-item3{
+    grid-column: 1;
+    grid-row: 2;
+    margin: 10% 10% 10% 30%;
+}
+
+.employee-item4{
+    grid-column: 2;
+    grid-row: 2;
+    margin: 10% 30% 10% 10%;
+}
+
+.employee-name-item1{
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.employee-name-item2{
+    grid-column: 1 / span 2;
+    grid-row: 2;
+}
+
+.employee-name-item3{
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.employee-name-item3 img{
+    width: 73%;
+    height: auto;
+}
+
+.employee-name-item4{
+    grid-column: 2;
+    grid-row: 3;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.employee-name-item4 button{
+    width: 175px;
+    height: 175px;
+    border-radius: 100%;
+    border: none;
+    background-color: #FED3DA;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.employee-name-item4 p{
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.employee-name-item4 a:hover{
+    text-decoration: none;
+}
