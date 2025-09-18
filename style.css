@@ -330,10 +330,48 @@ footer img{
 
 /* Kontakta oss */
 #contact{
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    margin-left: 5%;
+    display: block;
+    padding-left: 5%;
     width: 60%;
 }
 
+form label, form input, form textarea, form button {
+    display: block;
+    font-family: 'Instrument serif', sans-serif;
+}
+
+form label{
+    font-size: 1.5rem;
+}
+
+form input, form textarea{
+    margin-bottom: 5%;
+    width: 50%;
+    height: 5vh;
+    font-size: 1.25rem;
+    padding: 0 1%;
+}
+
+form textarea{
+    height: 20vh;
+    resize: none;
+    padding: 1%;
+}
+
+#contact h1{
+    font-family: 'Italianno', sans-serif;
+    font-size: 5em;
+    text-align: left;
+    margin: 8% 0 3% 0;
+}
+
+button{
+    width: 15%;
+    height: 5vh;
+    font-size: 1.25rem;
+    background-color: #C8EBCB;
+    border: 1px solid;
+    border-color: #A1DAA6;
+    border-radius: 20px;
+    margin-bottom: 7%;
+}
