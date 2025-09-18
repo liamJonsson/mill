@@ -19,19 +19,22 @@ a:hover{
 
 
 /*Rubriker*/
-h2, h4, h5{
+h1, h2{
     font-weight: 200;
 }
-h4{
-    font-family: 'Italianno', sans-serif;
-    font-size: 3.5rem;
+
+h1{
+    font-family: 'Instrument Serif', sans-serif;
+    text-align: center;
+    font-size: 4.5em;
 }
 
 h2{
-    font-family: 'Instrument Serif', sans-serif;
-    text-align: center;
-    font-size: 5rem;
+    font-family: 'Italianno', sans-serif;
+    font-size: 3.5em;
 }
+
+
 
 /*Meny*/
 header{
@@ -41,10 +44,10 @@ header{
     grid-template-columns: 70% 15% 15%;
 }
 
-header img{
-    width: 5%;
+a img{
+    width: 25%;
     height: auto;
-    margin: 2% 1.5%;
+    margin: 7% 5%;
 }
 
 .item1{
@@ -153,9 +156,9 @@ p{
     background-position: top;
 }
 
-#ourServices h2{
+#ourServices h1{
     color: #FEFFE2;
-    padding-top: 15%
+    padding-top: 15%; 
 }
 
 .services-container{
@@ -175,10 +178,9 @@ p{
     box-shadow: 0 5px 5px rgba(0,0,0,0.1);
 }
 
-.service-items h5{
-    margin: 7%;
-    color: #FED3DA;
-    font-size: 3.5rem;
+.service-items h2{
+    margin: 5%;
+    color: #f1b2bc;
 }
 
 .service-items p{
@@ -209,9 +211,9 @@ p{
     grid-template-rows: 50% 50%;
 }
 
-#employees h2{
+#employees h1{
     color: #FED3DA;
-    padding-top: 10%;
+    margin: 10% 0 0 0;
 }
 
 .employee-items{
@@ -226,11 +228,6 @@ p{
     grid-template-rows: 25% 25% 50%;
     grid-template-columns: 50% 50%;
     height: 500px;
-}
-
-.employee-items h5{
-    font-size: 3.5rem;
-    margin: 0;
 }
 
 .employee-items p{
@@ -317,3 +314,26 @@ p{
 .employee-name-item4 a:hover{
     text-decoration: none;
 }
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+footer img{
+    width: 20%;
+}
+
+
+
+
+
+/* Kontakta oss */
+#contact{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-left: 5%;
+    width: 60%;
+}
+
