@@ -55,7 +55,7 @@ inputName.addEventListener('input', (event) => {
 inputTel.addEventListener('input', (event) => {
     const tel = event.target.value;
 
-    if(tel.length > 0 && /^[0-9+\-]+$/.test(tel)) {
+    if(tel.length > 0 && /^[0-9+\-\s]+$/.test(tel)) {
         hasValidTel = true;
         telError.classList.add('visibility-hidden');
 
@@ -108,6 +108,7 @@ inputMessage.addEventListener('input', (event) => {
      validateForm();
 });
 
-sendButton.addEventListener('click', (event) => {
-     alert('Meddelandet har skickats!');
+sendButton.addEventListener('click', () => {
+    const thankyouMessage = document.getElementById('thankyou-message');
+    thankyouMessage.classList.remove('visibility-hidden');
 });

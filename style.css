@@ -12,11 +12,10 @@ a{
     text-decoration: none;
     font-family: 'Instrument Serif', sans-serif;
 }
+
 a:hover{
     text-decoration: underline;
 }
-
-
 
 /*Rubriker*/
 h1, h2{
@@ -26,22 +25,31 @@ h1, h2{
 h1{
     font-family: 'Instrument Serif', sans-serif;
     text-align: center;
-    font-size: 4.5em;
+    font-size: 4.5vw;
 }
 
 h2{
     font-family: 'Italianno', sans-serif;
-    font-size: 3.5em;
+    font-size: 3.5vw;
 }
 
 
 
 /*Meny*/
+#menu-small-screen{
+    display: none;
+    width: 100%;
+    text-align: right;
+}
+
+#menu-large-screen{
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+}
+
 header{
     background-color: #FFF2CC;
     box-shadow: 0 5px 5px rgba(0,0,0,0.1);
-    display: grid;
-    grid-template-columns: 70% 15% 15%;
 }
 
 a img{
@@ -60,23 +68,20 @@ a img{
     grid-column: 2;
     display: flex;
     align-items: center; 
-    justify-content: start; 
+    justify-content: end; 
 }
 
 .item3{
     grid-column: 3;
     display: flex;
     align-items: center;  
-    justify-content: start;
+    justify-content: center;
 }
 
 .item2 a, .item3 a{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-family: 'Julius Sans One', sans-serif;
 }
-
-
-
 
 /*Konditori Mill - Sektion*/
 #konditori-mill{
@@ -334,17 +339,17 @@ footer img{
     width: 60%;
 }
 
-form label, form input, form textarea, form button {
+#form label, #form input, #form textarea, #form button {
     display: block;
     font-family: 'Instrument serif', sans-serif;
 }
 
-form label{
+#form label{
     font-size: 1.5rem;
     margin-top: 5%;
 }
 
-form input, form textarea{
+#form input, #form textarea{
     
     width: 50%;
     height: 5vh;
@@ -353,18 +358,23 @@ form input, form textarea{
 
 }
 
-form textarea{
+#form textarea{
     height: 20vh;
     resize: none;
     padding: 1%;
     margin-bottom: 0;
 }
 
-form p{
+#form p{
     font-size: 1rem;
     margin: 0 0 5% 0;
     font-style: italic;
-    
+}
+
+#form #thankyou-message{
+    font-family: 'Instrument Serif', sans-serif;
+    font-size: 2rem;
+    color: #A1DAA6;
 }
 
 #nameError, #telError, #emailError, #messageError{
@@ -377,7 +387,7 @@ form p{
 
 #contact h1{
     font-family: 'Italianno', sans-serif;
-    font-size: 5em;
+    font-size: 5vw;
     text-align: left;
     margin: 8% 0 3% 0;
 }
@@ -393,3 +403,37 @@ button{
     margin-bottom: 7%;
 }
 
+@media (max-width: 768px){
+    header{
+        background-color: #FFF2CC;
+        box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+        padding: 5% 3% 3% 5%;
+    }
+
+    #menu-large-screen{
+        display: none;
+    }
+
+    #menu-small-screen{
+        display: block;
+        text-align: right;
+    }
+
+    #menu{
+        display: none;
+        list-style-type: none;
+    }
+
+    #menu-toggle:checked ~ #menu{
+        display: block;
+    }
+
+    #menu-toggle{
+        display: none;
+    }
+
+    #menu li{
+        padding-top: 2%;
+    }
+    
+}

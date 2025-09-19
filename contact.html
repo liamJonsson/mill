@@ -24,7 +24,7 @@
     </header>
     <section id="contact">
         <h1>Kontakta oss</h1>
-        <form>
+        <div id="form">
             <label for="name">* Ditt namn:</label>
             <input type="text" id="name" name="name" value="">
             <p class="visibility-hidden" id="nameError"> Namnet är ogiltigt</p>
@@ -39,7 +39,8 @@
             <p class="visibility-hidden" id="messageError">Ditt meddelande får inte överskrida 500 ord</p>
             <p>* Obligatoriska fält</p>
             <button id="sendButton">Skicka</button>
-        </form>
+            <p id="thankyou-message" class="visibility-hidden">Tack för ditt meddelande!</p>
+        </div>
     </section>
     <footer>
         <img src="pictures/logo_text.png" alt="Logotyp med text">
