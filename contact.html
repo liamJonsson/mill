@@ -25,17 +25,20 @@
     <section id="contact">
         <h1>Kontakta oss</h1>
         <form>
-            <div>
-                <label for="name">Ditt namn:</label>
-                <input type="text" id="name" name="name" value="">
-                <label for="tel">Ditt telefonnummer:</label>
-                <input type="tel" id="tel" name="tel">
-                <label for="email">Din e-postadress:</label>
-                <input type="email" id="email" name="email">
-                <label for="message">Vad kan vi hjälpa dig med?</label>
-                <textarea name="message" id="message"></textarea>
-                <button>Skicka</button>
-            </div>
+            <label for="name">* Ditt namn:</label>
+            <input type="text" id="name" name="name" value="">
+            <p class="visibility-hidden" id="nameError"> Namnet är ogiltigt</p>
+            <label for="tel">* Ditt telefonnummer:</label>
+            <input type="tel" id="tel" name="tel">
+            <p class="visibility-hidden" id="telError"> Telefonnumret är ogiltigt</p>
+            <label for="email">* Din e-postadress:</label>
+            <input type="email" id="email" name="email">
+            <p class="visibility-hidden" id="emailError">Epostadress är ogiltigt</p>
+            <label for="message">* Vad kan vi hjälpa dig med?</label>
+            <textarea name="message" id="message"></textarea>
+            <p class="visibility-hidden" id="messageError">Ditt meddelande får inte överskrida 500 ord</p>
+            <p>* Obligatoriska fält</p>
+            <button id="sendButton">Skicka</button>
         </form>
     </section>
     <footer>

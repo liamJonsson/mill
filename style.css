@@ -282,7 +282,7 @@ p{
 }
 
 .employee-name-item3 img{
-    width: 73%;
+    width: 74%;
     height: auto;
 }
 
@@ -304,14 +304,13 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.employee-name-item4 p{
     font-size: 1.1rem;
     text-align: center;
+    font-family: 'Instrument serif', sans-serif;
+    color: #5F3917;
 }
 
-.employee-name-item4 a:hover{
+.employee-name-item4 button:hover{
     text-decoration: none;
 }
 
@@ -342,20 +341,38 @@ form label, form input, form textarea, form button {
 
 form label{
     font-size: 1.5rem;
+    margin-top: 5%;
 }
 
 form input, form textarea{
-    margin-bottom: 5%;
+    
     width: 50%;
     height: 5vh;
     font-size: 1.25rem;
     padding: 0 1%;
+
 }
 
 form textarea{
     height: 20vh;
     resize: none;
     padding: 1%;
+    margin-bottom: 0;
+}
+
+form p{
+    font-size: 1rem;
+    margin: 0 0 5% 0;
+    font-style: italic;
+    
+}
+
+#nameError, #telError, #emailError, #messageError{
+    color: red;
+}
+
+.visibility-hidden{
+   display: none;
 }
 
 #contact h1{
@@ -375,3 +392,4 @@ button{
     border-radius: 20px;
     margin-bottom: 7%;
 }
+
