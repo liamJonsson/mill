@@ -3,7 +3,7 @@ body{
     margin: 0;
     padding: 0;
     background-image: url("pictures/background-image.png");
-    color: #5F3917
+    color: #5F3917;
 }
 
 /*Länkar*/
@@ -25,31 +25,25 @@ h1, h2{
 h1{
     font-family: 'Instrument Serif', sans-serif;
     text-align: center;
-    font-size: 4.5vw;
+    font-size: 4.5rem;
 }
 
 h2{
     font-family: 'Italianno', sans-serif;
-    font-size: 3.5vw;
+    font-size: 3.5rem;
 }
 
 
 
 /*Meny*/
-#menu-small-screen{
-    display: none;
-    width: 100%;
-    text-align: right;
-}
-
-#menu-large-screen{
-    display: grid;
-    grid-template-columns: 50% 25% 25%;
-}
-
 header{
     background-color: #FFF2CC;
     box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+}
+
+header a{
+    font-size: 1.4rem;
+    font-family: 'Julius Sans One', sans-serif;
 }
 
 a img{
@@ -78,9 +72,15 @@ a img{
     justify-content: center;
 }
 
-.item2 a, .item3 a{
-    font-size: 1.4rem;
-    font-family: 'Julius Sans One', sans-serif;
+#menu-small-screen{
+    display: none;
+    width: 100%;
+    text-align: right;
+}
+
+#menu-large-screen{
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
 }
 
 /*Konditori Mill - Sektion*/
@@ -88,9 +88,10 @@ a img{
     display: flex;
     align-items: center;
     justify-content: center;
+    height: auto;
 }
 
-.konditori-mill-container{
+.konditori-mill-container-large-screen{
     display: grid;
     background-color: rgba(255, 242, 204, 0.5);
     border-radius: 50px;
@@ -100,9 +101,14 @@ a img{
     grid-template-columns: 50% 50%;
     grid-template-rows: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
     margin-top: 10%;
+    height: auto;
 }
 
-.mill-item1{
+.konditori-mill-container-small-screen{
+    display: none;
+}
+
+.mill-item1{ /*Rubrik*/
     grid-row: 1 / span 2;
     grid-column: 1;
     display: flex;
@@ -110,7 +116,7 @@ a img{
     align-items: center;
 }
 
-.mill-item2{
+.mill-item2{ /*Bild*/
     grid-row: 1 / span 4;
     grid-column: 2;
     display: flex;
@@ -119,7 +125,7 @@ a img{
 }
 
 
-.mill-item3{
+.mill-item3{ /*Paragraf*/
     grid-row: 3 / span 6;
     grid-column: 1;
     display: flex;
@@ -132,7 +138,7 @@ a img{
     margin-left: 3%;      
 }
 
-.mill-item4{
+.mill-item4{ /*Bild*/
     grid-row: 5 / span 4;
     grid-column: 2;
     display: flex;
@@ -156,9 +162,9 @@ p{
 /*Våra tjänster - Sektion*/
 #ourServices{
     background-image: url("pictures/services.png");
-    background-size: cover;
+    background-size: auto 100%;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: top center;
 }
 
 #ourServices h1{
@@ -166,10 +172,14 @@ p{
     padding-top: 15%; 
 }
 
-.services-container{
+.services-container-large-screen{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     padding-bottom: 10%;
+}
+
+.services-container-small-screen{
+    display: none;
 }
 
 .service-items{
@@ -210,10 +220,14 @@ p{
 }
 
 /*Våra anställda - Sektion*/
-.employees-container{
+.employees-container-large-screen{
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
+}
+
+.employees-container-small-screen{
+    display: none;
 }
 
 #employees h1{
@@ -239,7 +253,7 @@ p{
     width: 80%;
     text-align: left;
     margin: 0 12%;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 
@@ -268,7 +282,7 @@ p{
     margin: 10% 30% 10% 10%;
 }
 
-.employee-name-item1{
+.employee-name-item1{ /*Rubrik*/
     grid-column: 1 / span 2;
     grid-row: 1;
     display: flex;
@@ -276,12 +290,12 @@ p{
     align-items: center;
 }
 
-.employee-name-item2{
+.employee-name-item2{ /*Text*/
     grid-column: 1 / span 2;
     grid-row: 2;
 }
 
-.employee-name-item3{
+.employee-name-item3{ /*Bilden*/
     grid-column: 1;
     grid-row: 3;
 }
@@ -291,7 +305,7 @@ p{
     height: auto;
 }
 
-.employee-name-item4{
+.employee-name-item4{ /*Knapp*/
     grid-column: 2;
     grid-row: 3;
     display: flex;
@@ -299,7 +313,7 @@ p{
     align-items: center;
 }
 
-.employee-name-item4 button{
+.employee-name-item4 button{ /*Knapp*/
     width: 175px;
     height: 175px;
     border-radius: 100%;
@@ -339,39 +353,36 @@ footer img{
     width: 60%;
 }
 
-#form label, #form input, #form textarea, #form button {
+form label, form input, form textarea, form button {
     display: block;
     font-family: 'Instrument serif', sans-serif;
 }
 
-#form label{
+form label{
     font-size: 1.5rem;
     margin-top: 5%;
 }
 
-#form input, #form textarea{
-    
+form input, form textarea{   
     width: 50%;
-    height: 5vh;
     font-size: 1.25rem;
     padding: 0 1%;
-
 }
 
-#form textarea{
+form textarea{
     height: 20vh;
     resize: none;
     padding: 1%;
     margin-bottom: 0;
 }
 
-#form p{
+form p{
     font-size: 1rem;
     margin: 0 0 5% 0;
     font-style: italic;
 }
 
-#form #thankyou-message{
+form #thankyou-message{
     font-family: 'Instrument Serif', sans-serif;
     font-size: 2rem;
     color: #A1DAA6;
@@ -387,14 +398,12 @@ footer img{
 
 #contact h1{
     font-family: 'Italianno', sans-serif;
-    font-size: 5vw;
     text-align: left;
     margin: 8% 0 3% 0;
 }
 
-button{
+form button{
     width: 15%;
-    height: 5vh;
     font-size: 1.25rem;
     background-color: #C8EBCB;
     border: 1px solid;
@@ -404,12 +413,17 @@ button{
 }
 
 @media (max-width: 768px){
-    header{
-        background-color: #FFF2CC;
-        box-shadow: 0 5px 5px rgba(0,0,0,0.1);
-        padding: 5% 3% 3% 5%;
+
+    /*Rubriker*/
+    h1{
+        font-size: 2.75rem;
     }
 
+    h2{
+        font-size: 2.5rem;
+    }
+
+    /*Meny mobilanpassning*/
     #menu-large-screen{
         display: none;
     }
@@ -435,5 +449,122 @@ button{
     #menu li{
         padding-top: 2%;
     }
+
+    header{
+        background-color: #FFF2CC;
+        box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+        padding: 5% 3% 3% 5%;
+    }
+
+    header a{
+        font-size: 0.8rem;
+    }
+
+    /*Konditori Mill - Sektion mobilanpassning*/
+    .konditori-mill-container-large-screen{
+        display: none;
+    }
+
+    .konditori-mill-container-small-screen{
+        display: block;
+        background-color: rgba(255, 242, 204, 0.5);
+        border-radius: 50px;
+        border: 5px solid;
+        border-color: #C8EBCB;
+        width: 85%;
+        margin-top: 10%;
+        height: auto;
+    }
+
+    .mill-item1 h2{ 
+        margin-bottom: 0;
+    }
+
+    .mill-item3 p{
+        width: 85%;                
+    }
+
+    .mill-item2 img, .mill-item4 img{
+        margin-bottom: 10%;
+    }
+
+    /*Våra tjänster - Sektion mobilanpassning*/
+    #ourServices{
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
     
+    #ourServices h1{
+        color: #FEFFE2;
+        padding-top: 15%; 
+    }
+
+    .services-container-small-screen{
+        display: block;
+        background-color: #A1DAA6;
+        padding-bottom: 10%;
+    }
+
+    .services-container-large-screen{
+        display: none;
+    }
+
+    /*Våra anställda - Sektion mobilanpassning*/    
+
+    .employee-items{
+        margin: 10% auto;
+        height: 375px;
+    }
+
+    .employee-name-item3{ /*Bild*/
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .employee-name-item4{
+        justify-content: center;
+    }
+
+    .employee-name-item4 button{ /*Knapp*/
+        width: 100px;
+        height: 100px;
+        font-size: 0.8rem;
+    }
+    
+    .employees-container-small-screen{
+        display: block;
+        margin-top: 10%;
+        height: auto;
+    }
+
+    .employees-container-large-screen{
+        display: none;
+    }
+
+    /* Kontakta oss mobilanpassning */
+
+    form label{
+        font-size: 1.1rem;
+
+    }
+
+    form input, form textarea{   
+    width: 70%;
+    font-size: 0.9rem;
+    }
+
+    form p{
+        font-size: 0.72rem;
+    }
+
+    form button{
+        width: 30%;
+        font-size: 0.9rem;
+    }
+
+    form #thankyou-message{
+        font-size: 1rem;
+    }
 }
