@@ -1,0 +1,76 @@
+#employee-profile {
+    padding-left: 5%;
+}
+
+.employee-profile-container{
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.profile-item1{
+    background-color: #FEFFEB; 
+    border: 5px solid;
+    border-color: #FFF2CC; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: auto;
+    padding-top: 5%;  
+}
+
+.profile-item1 img{
+    width: 70%;
+    height: auto;
+}
+
+.profile-item2{
+    padding: 1% 5%;
+    text-align: left;
+    width: 70%;
+}
+
+#employee-projects{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+#project-container{
+    display: block;
+    width: 90%;
+}
+
+.project-item1{
+    background-color: #FFF2CC;
+    border-radius: 10px;
+}
+
+.project-item1 h2{
+    text-align: center;
+    padding: 2%;
+}
+.project-items{
+    background-color: #FEFFEB;
+    border-radius: 10px;
+    display: grid;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 50% 50%;
+    margin-top: 5%;
+    padding-left: 2%;
+}
+
+.project-grid-item1{
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.project-grid-item2{
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.project-grid-item3{
+    grid-row: 2;
+    grid-column: 1 / span 2;
+}
