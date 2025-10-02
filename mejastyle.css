@@ -362,6 +362,10 @@ p{
         font-size: 1.5rem;
     }
 
+    .grid-customer{
+        padding-top: 7%;
+    }
+
     .grid-image{
         grid-column: 1;
         grid-row: 1;
