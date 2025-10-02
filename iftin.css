@@ -85,7 +85,7 @@
 .iftin-progress.smak.active { width: 85%; transition-delay: 0.9s; }
 
 /* Mina projekt - Sektion */
-.iftin-projects-section {
+.iftin-projects-wrapper {
   background-image: url("iftins-bilder/myprojects.png");
   background-size: auto 100%;
   background-position: top center;
@@ -95,7 +95,7 @@
   text-align: center;
 }
 
-.iftin-projects-section h1 {
+.iftin-projects-wrapper h1 {
   color: #FEFFE2;
   padding-top: 9%;
 }
@@ -213,6 +213,7 @@
   padding: 0.8rem 1rem;
   transition: background-color 0.3s ease;
   margin: 0 1rem;
+  cursor: pointer;
 }
 
 #iftin-slideshow button:hover {
@@ -254,12 +255,9 @@
     width: 60%;
     max-width: 15rem;
     margin: 0 auto;
-    display: block;
   }
 
   .iftin-text {
-    grid-column: 1;
-    grid-row: 2;
     margin: 0 auto;
     font-size: 1rem;
     text-align: left; 
@@ -267,8 +265,6 @@
   }
 
   .iftin-skills {
-    grid-column: 1;
-    grid-row: 3;
     margin-top: 2rem;
   }
 
@@ -288,13 +284,6 @@
     max-height: 15rem; 
     margin: 0 0 1rem 0;
     overflow: hidden; 
-  }
-
-  .iftin-project-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-    display: block;
   }
 
   .iftin-project-content {

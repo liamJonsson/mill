@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Konditori Mill</title>
     <link rel="stylesheet" href="iftin.css">
-      <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="script.js" defer></script>
     <script src="iftin.js" defer></script>
@@ -13,9 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Italianno&family=Julius+Sans+One&family=Lora:ital,wght@0,400..700;1,400..700&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Story+Script&display=swap" rel="stylesheet"> <!--Rubriker-->
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Serif:ital@0;1&family=Italianno&family=Julius+Sans+One&family=Lora:ital,wght@0,400..700;1,400..700&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Story+Script&display=swap" rel="stylesheet"> <!--Brödtext-->
 </head>
- <body>
+<body>
     <header>
-                <div id="menu-small-screen">
+        <div id="menu-small-screen">
             <input type="checkbox" id="menu-toggle">
             <label for="menu-toggle" id="menuIcon">&#9776;</label>
             <ul id="menu">
@@ -36,7 +36,8 @@
         </div>
         </div>
     </header>
-        <section id="iftin-presentation">
+
+    <section id="iftin-presentation">
         <div class="iftin-card">
             <div class="iftin-image">
             <h2>Iftin Serar</h2>
@@ -85,34 +86,38 @@
                 <p>Smakkomposition</p>
                 <div class="iftin-bar"><div class="iftin-progress smak"></div></div>
             </div>
-            </div>
+          </div>
         </div>
-        </section>
-        <section id="myProjects" class="iftin-projects-section">
+    </section>
+
+    <section id="myProjects" class="iftin-projects-wrapper">
         <h1>M I N A &nbsp; P R O J E K T</h1>
-        </section>
-        <div id="iftin-projects-section">
-            <div id="iftin-controls">
+    </section>
+    <div id="iftin-projects-section">
+        <div id="iftin-controls">
             <input type="text" id="iftin-sök" placeholder="Sök projekt...">
             <select id="iftin-sort-year">
                 <option value="">Sortera efter år</option>
                 <option value="asc">Äldst först</option>
                 <option value="desc">Nyast först</option>
             </select>
-            </div>
-        <div id="iftin-project-list"></div>
-        </div>     
-        <section id="upcomingProjects" class="iftin-projects-section">
+    </div>  
+    <div id="iftin-project-list"></div>
+    </div>
+
+    <section id="upcomingProjects" class="iftin-projects-wrapper">
         <h1>K O M M A N D E &nbsp; P R O J E K T</h1>
-        </section>
-        <div id="iftin-slideshow">
+    </section>
+        
+    <div id="iftin-slideshow">
         <button id="iftin-prev">&#10094;</button>
         <div id="iftin-slideshow-container">
             <img id="iftin-slideshow-image" src="iftins-bilder/iftinsGlasskollektion.png" alt="Slideshow bild">
             <div id="iftin-slideshow-text"></div>
         </div>
         <button id="iftin-next">&#10095;</button>
-        </div>
+    </div>
+    
     <footer>
         <img src="pictures/logo_text.png" alt="Logotyp med text">
     </footer>        
