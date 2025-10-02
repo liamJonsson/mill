@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Konditor Meja</title>
+     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mejastyle.css">
+    <script src="mejascript.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Julius+Sans+One&family=Lora:ital,wght@0,400..700;1,400..700&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Story+Script&display=swap" rel="stylesheet"> <!--Meny-font-->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Italianno&family=Julius+Sans+One&family=Lora:ital,wght@0,400..700;1,400..700&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Story+Script&display=swap" rel="stylesheet"> <!--Rubriker-->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Serif:ital@0;1&family=Italianno&family=Julius+Sans+One&family=Lora:ital,wght@0,400..700;1,400..700&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Story+Script&display=swap" rel="stylesheet"> <!--Brödtext-->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+   
+</head>
+<body>
+    <header>
+        <div id="menu-small-screen">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" id="menuIcon">&#9776;</label>
+            <ul id="menu">
+                <li><a href="index.html">Startsida</a></li>
+                <li><a href="index.html#employees">Våra anställda</a></li>
+                <li><a href="contact.html">Kontakta oss</a></li>
+            </ul>
+        </div>
+        <div id="menu-large-screen">
+            <div class="item1">
+                <a href="index.html"><img src="pictures/logo.png" alt="Logotyp"></a> 
+            </div>
+            <div class="item2">
+                <a href="index.html#employees">Våra anställda</a>
+            </div>
+            <div class="item3">
+                <a href="contact.html">Kontakta oss</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about-meja-section">
+        <div class="about-meja-container">
+            <div id="about-meja-item1"> 
+                <h1>Konditor Meja</h1>
+            </div>
+
+            <div id="about-meja-item2"> 
+                <img src="Meja_bilder/BildMeja0.png" alt="Meja">
+            </div>
+            
+            <div id="about-meja-item3"> 
+                <p>Meja är konditorn som förvandlar varje cupcake till en liten smakexplosion. Hennes bakverk är kända för att vara otroligt saftiga och fulla av smak, och de smälter bokstavligen i munnen. Varje cupcake skapas med stor omsorg, från den mjuka kakan till den lena smörkrämen och de vackra dekorationerna. <br><br>
+                    I konditoriet möts kunderna alltid av Mejas värme och glädje. Hon älskar att prata om smaker, höra kundernas berättelser och dela sin passion för bakning. Den personliga kontakten är viktig för henne och bidrar till att många återkommer gång på gång. För Meja är konditoriet mer än ett arbete, det är en plats där hantverk, kreativitet och glädje möts. <br><br>
+                    Meja tar också gärna emot cateringuppdrag för speciella tillfällen. Hon ser varje beställning som en chans att skapa något unikt, vare sig det handlar om bröllop, födelsedagar eller företagsevent. Med sitt sinne för detaljer och sin passion för smaken ser hon till att hennes cupcakes blir en uppskattad del av varje fest.<br><br>
+                </p>
+            </div>
+        </div>    
+    </section>
+
+    <section id="skillbar-slideshow-section">
+
+        <div id="skillbar-slideshow-container">
+            <div id="skillbar-container">
+                <h3>Mejas färdigheter</h3>
+
+                <ul>
+                    <li>
+                        <h4 class="skillbar-title">Cupcakebakning</h4>
+                        <div class="skillbar">
+                            <span id = "fill-cupcake">95%</span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <h4 class="skillbar-title">Effektivitet</h4>
+                        <div class="skillbar">
+                            <span id = "fill-efficiency">60%</span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <h4 class="skillbar-title">Noggranhet</h4>
+                        <div class="skillbar">
+                            <span id = "fill-precision">85%</span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <h4 class="skillbar-title">Kreativitet</h4>
+                        <div class="skillbar">
+                            <span id = "fill-creativity">70%</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="slideshow-container">
+
+                <img id="slideshow-picture" src="Meja_bilder/BildMeja2.png" alt="Bilder på Meja">
+            
+                <div id="slideshow-buttons">
+                    <button id="back-button">
+                        Tillbaka
+                    </button>
+                    <span id="picture-count"> 1/5 </span>
+                    <button id="next-button">
+                        Nästa
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects-section">
+        <h1>M E J A S &nbsp; P R O J E K T</h1>
+
+        <div id="filtering-sorting-container">
+            <input type="text" id="filtering" placeholder="Filtrera projekt">
+            <select id="sorting">
+                <option value=""> Välj sätt att sortera</option>
+                <option value="alphabetical-titles"> Sortera utifrån bokstavsordning </option>
+            </select>
+        </div>
+
+        <div id="projects-container"></div>
+
+    </section>
+    <footer>
+        <img src="pictures/logo_text.png" alt="Logotyp med text">
+    </footer>
+</body>
+</html>
+

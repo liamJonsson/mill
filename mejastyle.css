@@ -1,0 +1,386 @@
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+p{
+    font-size: 1.25rem;
+    top: 0%;
+}
+
+/* Mejas sida */
+
+#about-meja-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+.about-meja-container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 20% 80%;
+    width: 80%; 
+    margin: 5% 0%;
+    background-color: rgba(255, 204, 226, 0.305);
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1);
+    
+}
+
+#about-meja-item1{ /*Rubrik*/
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: -20%;
+   
+}
+
+#about-meja-item2{ /*bild*/
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#about-meja-item2 img{
+    width: 50%;
+    height: auto;
+    border: 7px solid;
+    border-color:#ffb89265;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1);
+}
+
+#about-meja-item3{ /*Stycke*/
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    text-align: left;
+    width: 85%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about-meja-item3 p{
+    width: 85%;
+}
+
+
+/* skillbar slideshow*/
+
+#skillbar-slideshow-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+#skillbar-slideshow-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    width: 80%;
+    justify-items: center;
+}
+
+#skillbar-container, #slideshow-container{
+    transition: transform 1.5s ease-out;
+}
+
+#skillbar-container.move{
+    transform: translateX(0);
+}
+
+#slideshow-container.move{
+      transform: translateX(0);
+}
+
+
+/*Bildspel*/
+
+#slideshow-container{
+    display: grid;
+    grid-template-rows: auto auto;
+    margin: auto;
+    transform: translateX(150%);
+  
+}
+#slideshow-container img{
+    grid-row: 1;
+    width: 40%;
+    height: auto;
+    border-radius: 5%;
+    border: 10px solid;
+    border-color:#FFB992;
+    margin: auto;
+    margin-bottom: 1%;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1);
+}
+
+#slideshow-buttons{
+    grid-row: 2;
+    width: 40%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+} 
+
+#back-button, #next-button{
+    background-color: #f0b0a0;
+    border: none;
+    border-radius: 7px;
+    padding: 1% 3%;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+    font-family: 'Instrument serif', sans-serif;
+    color: #5F3917;
+}
+
+
+/*Skillbar*/
+#skillbar-container{
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+    background-color: #FFF2CC;
+    width: 80%;
+    transform: translateX(-150%);
+}
+
+ #skillbar-container ul{
+    list-style: none;
+    padding: 0;
+} 
+
+#skillbar-container li{
+    margin: 5% 0;
+}
+
+#skillbar-container h3{
+    text-align: center;
+    font-size: 1.6rem;
+    
+}
+
+.skillbar-title{
+    font-size: 1.2rem;
+    margin-bottom: 3%;
+    padding-left: 10%;
+}
+
+.skillbar{
+    border: 1px solid #5F3917;
+    border-radius: 10px;
+    width: 80%;
+    height: 17px;
+    margin: 0 auto; 
+}
+
+.skillbar span{
+    display: block;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #f0b0a0;
+    text-align: center;
+    font-size: 0.9rem;
+    width: 0;
+    transition: width 5s ease-out;
+}
+
+#fill-cupcake.skillbar-filled { width: 95%;}
+#fill-efficiency.skillbar-filled { width: 60%;}
+#fill-precision.skillbar-filled { width: 85%;}
+#fill-creativity.skillbar-filled { width: 70%;}
+
+
+
+/*Projekten*/
+
+#filtering-sorting-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+#filtering{
+    border: 2px solid #f0b0a0;
+    border-radius: 5px;
+    background-color: white;
+    font-family: 'Julius Sans One', sans-serif;
+
+}
+
+#sorting{
+    border: 2px solid #f0b0a0;
+    border-radius: 5px;
+    background-color: white;
+    font-family: 'Julius Sans One', sans-serif;
+
+}
+
+.projects-container{
+    background-color: #FFB992;
+    
+}
+
+.project{
+    background-color: white;
+    width: 60%;
+    margin: 3% auto;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    border: 5px solid;
+    border-color: #FFF2CC;
+    padding: 0 1% 1% 0;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 20% 60% 10% 10%;
+    transition: transform 0.3s ease;
+}
+
+.project:hover{
+    transform: scale(1.05);
+}
+
+.project img{
+    width: 50%;
+    height: auto;
+    justify-self: center;
+    display: block;
+    margin-top: 7%;
+    border: 5px solid;
+    border-color: #f0b0a0;
+    border-radius: 5px;
+}
+
+.grid-title{
+    grid-column: 2;
+    grid-row: 1;
+    margin: 5%;
+}
+
+.grid-customer{
+    grid-column: 2;
+    grid-row: 3;
+    justify-self: end;
+     margin: 0;
+}
+
+.grid-description{
+    grid-column: 2;
+    grid-row: 2;
+    margin: 3%;
+}
+
+.grid-date{
+    grid-column: 2;
+    grid-row: 4;
+    margin: 0;
+    justify-self: end;
+}
+
+.grid-image{
+    grid-column: 1;
+    grid-row: 1 / span 4;
+}
+
+@media (max-width: 768px){
+    
+    /*Om Meja*/
+    .about-meja-container{
+    display: block;
+    }
+
+    #about-meja-item3 {
+        margin: 0 auto;
+        
+    }
+
+    /*skillbar & slideshow*/
+
+    #skillbar-slideshow-container{
+        display: block;
+    }
+
+    #skillbar-container {
+        padding: 1% 0 5% 0;
+        margin: 7% 0;
+    }
+
+    #slideshow-container {
+        margin-top: 10%;
+        width: 80%;
+    }
+
+    #slideshow-container img{
+        width: 60%;
+        height: auto;
+    
+    } 
+
+    #slideshow-buttons{
+        width: 60%;
+    } 
+
+    /* projekt*/
+
+    #filtering-sorting-container{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #filtering, #sorting {
+        width: 50%;
+    }
+
+    .project{
+        width: 80%;
+        padding: 2%;
+        grid-template-rows: 30% 50% 10% 10%;
+        margin: 5% auto;
+    }
+
+    .project img{
+        width: 60%;
+        height: auto;
+        margin: 5% 0 0 -2%;
+        
+    }
+
+    .grid-title{
+        margin: auto;
+        font-size: 1.7rem;
+    }
+
+    .grid-description{
+        grid-column: 1 / span 2;
+        grid-row: 2;
+        width: 90%;
+        margin: 7% auto;
+        font-size: 1.5rem;
+    }
+
+    .grid-image{
+        grid-column: 1;
+        grid-row: 1;
+        
+    }
+
+    /* footer*/
+    footer img {
+        width: 30%;
+        height: auto;
+        margin-bottom: 10%;
+    }
+        
+
+}

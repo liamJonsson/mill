@@ -1,0 +1,38 @@
+[
+    {
+        "title": "Catering på bröllop",
+        "customer": "Norska kungaparet",
+        "description": "Jag fick äran att stå för en del av cateringen på det norska kungaparets bröllop. Det var en fantastisk upplevelse att få bidra till en så speciell dag med mina bakverk.",
+        "date": "2024-06-15",
+        "image": "Meja_Bilder/BildMeja7.png"
+    },
+    {
+        "title": "Workshop i cupcakesbakning",
+        "customer": "Privatpersoner",
+        "description": "Jag höll en workshop i cupcakesbakning för en grupp entusiastiska privatpersoner. Det var roligt att dela med mig av mina kunskaper och se deltagarna skapa sina egna läckra cupcakes.",
+        "date": "2025-05-10",
+        "image": "Meja_Bilder/BildMeja6.png"
+
+    },
+    {
+        "title": "Beställning på 100 cupcakes",
+        "customer": "Google AB",
+        "description": "Jag fick en stor beställning på 100 cupcakes från Google AB för deras företagsevent. Det var en utmaning att tillverka så många cupcakes på en gång",
+        "date": "2024-12-01",
+        "image": "Meja_Bilder/BildMeja8.png"
+    },
+    {
+        "title": "Beställning på 30 cupcakes",
+        "customer": "Barnfamilj",
+        "description": "Jag fick en beställning på 30 cupcakes från en barnfamilj för deras dotters födelsedagskalas. Det var roligt att skapa färgglada och lekfulla cupcakes som passade temat för kalaset.",
+        "date": "2023-02-20",
+        "image": "Meja_Bilder/BildMeja8.png"
+    },
+    {
+        "title": "Workshop i att bemästra cupcakes glasyr",
+        "customer": "Privatpersoner",
+        "description": "Jag höll en workshop i att bemästra cupcakes glasyr för en grupp ambitiösa privatpersoner. Det var givande att se deltagarna förbättra sina glasyrtekniker och skapa vackra cupcakes.",
+        "date": "2025-08-29",
+        "image": "Meja_Bilder/BildMeja6.png"
+    }
+]
