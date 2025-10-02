@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Lansering av Sommarkollektionen",
+    "year": 2024,
+    "description": "Utvecklade en säsongsbaserad kollektion av bakverk inspirerade av sommarens frukter och färger.",
+    "image": "iftins-bilder/iftinsSommarkollektion.png"
+  },
+  {
+    "title": "Hantverksmässan i Stockholm",
+    "year": 2023,
+    "description": "Deltog på Stockholms Hantverksmässa där vi visade upp chokladkonst och delade ut smakprover.",
+    "image": "iftins-bilder/iftinsHantverksmässa.png"
+  },
+  {
+    "title": "Bröllopskampanj",
+    "year": 2022,
+    "description": "Utformade skräddarsydda bröllopstårtor och dessertbord för 10 olika bröllop under säsongen.",
+    "image": "iftins-bilder/iftinsBröllopskampanj.png"
+  },
+  {
+    "title": "Pralinsamarbete med Lokalt Kafferi",
+    "year": 2023,
+    "description": "Ett samarbete med ett lokalt rosteri för att ta fram en unik pralinserie.",
+    "image": "iftins-bilder/iftinsKaffepraliner.png"
+  },
+  {
+    "title": "Digital Receptbok",
+    "year": 2021,
+    "description": "Byggde en digital receptsamling för kunder och följare.",
+    "image": "iftins-bilder/iftinsDigitalareceptbok.png"
+  }
+]

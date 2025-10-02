@@ -1,0 +1,344 @@
+#iftin-presentation {
+  margin: 5% auto;
+  max-width: 75%;
+}
+
+.iftin-card {
+  display: grid;
+  background-color: #FFF5F5;
+  border: 0.3em solid #FED3DA;
+  border-radius: 2em;
+  box-shadow: 0 0.5em 1em rgba(0,0,0,0.1);
+  padding: 2em;
+  grid-template-columns: 30% 65%;
+  align-items: start; 
+}
+
+/* Namn + bild */
+.iftin-image {
+  grid-column: 1;
+  grid-row: 1;
+  text-align: center;
+}
+
+.iftin-image h2 {
+  font-size: 3.5em;
+  margin-bottom: 0;
+}
+
+.iftin-image img {
+  width: 80%; 
+  border-radius: 1.2em;
+  border: 0.2em solid #FED3DA;
+}
+
+/* Presentationstext */
+.iftin-text {
+  grid-column: 2;
+  grid-row: 1;
+  font-size: 1.1em;
+  margin: 10% 0 5% 7%;
+  max-width: 100%;
+}
+
+/* Färdigheter */
+.iftin-skills h1 {
+  font-size: 2em;
+  text-decoration: underline;
+}
+
+.iftin-skills {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.iftin-skill {
+  margin-bottom: 1em;
+}
+
+/* Progress bars */
+.iftin-bar {
+  background: #FFF;
+  border-radius: 1em;
+  border: 0.15em solid #FED3DA;
+  height: 0.8em;
+  width: 70%;
+  margin: 0 auto;
+  box-shadow: 0 0.3em 0.3em rgba(29, 4, 4, 0.1);
+}
+
+.iftin-progress {
+  background: #FED3DA;
+  height: 100%;
+  width: 0;
+  border-radius: 1em;
+  box-shadow: 0 0.3em 0.3em rgba(17, 9, 9, 0.1);
+  transition: width 2s ease;
+}
+
+.iftin-progress.bakning.active { width: 90%; transition-delay: 0.5s; }
+.iftin-progress.macarons.active { width: 99%; transition-delay: 0.6s; }
+.iftin-progress.dekorering.active { width: 70%; transition-delay: 0.7s; }
+.iftin-progress.choklad.active { width: 80%; transition-delay: 0.8s; }
+.iftin-progress.smak.active { width: 85%; transition-delay: 0.9s; }
+
+/* Mina projekt - Sektion */
+.iftin-projects-section {
+  background-image: url("iftins-bilder/myprojects.png");
+  background-size: auto 100%;
+  background-position: top center;
+  background-repeat: repeat-x;
+  padding: 5% 0;
+  align-items: center;
+  text-align: center;
+}
+
+.iftin-projects-section h1 {
+  color: #FEFFE2;
+  padding-top: 9%;
+}
+
+#iftin-projects-section {
+  margin: 5% auto;
+  max-width: 75%;
+  text-align: center;
+}
+
+#iftin-controls {
+  margin: 3% 0;
+}
+
+#iftin-controls input, #iftin-controls select {
+  padding: 1em;
+  border: 0.2em solid #FED3DA;
+  border-radius: 1em;
+  font-size: 1em;
+  margin: 2em;
+}
+
+/* Projektlistan */
+#iftin-project-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.iftin-project-card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 90%;
+  margin: 2% 0;
+  background-color: #FFF5F5;
+  border: 0.3em solid #FED3DA;
+  border-radius: 2em;
+  padding: 2em;
+  box-shadow: 0 0.5em 1em rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.iftin-project-card:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 1em 2em rgba(0,0,0,0.2); 
+}
+.iftin-project-image {
+  flex: 0 0 25%;
+  aspect-ratio: 1 / 1; 
+  border-radius: 1em;
+  border: 0.3em solid #FED3DA;
+  margin-right: 5%;
+  overflow: hidden;
+}
+
+.iftin-project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: block;
+}
+
+.iftin-project-content {
+  flex: 1;
+  text-align: left;
+}
+
+.iftin-project-title {
+  font-size: 2em;
+  margin: 0 0 0.5em;
+}
+
+.iftin-project-title:hover {
+  text-decoration: none;
+}
+
+/* Slideshow container */
+#iftin-slideshow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5% auto;
+  width: 90%;
+}
+
+#iftin-slideshow-container {
+  position: relative;
+  margin: 5% 0 10% 0;
+  width: 90%;
+  max-width: 50rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 0.3rem solid #FED3DA;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+}
+
+#iftin-slideshow-container img {
+  width: 100%;
+  height: 35rem;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+#iftin-slideshow-container img:hover {
+  transform: scale(1.05);
+}
+
+#iftin-slideshow button {
+  background-color: #f3d3d3;
+  border: none;
+  border-radius: 50%;
+  font-size: 2rem;
+  padding: 0.8rem 1rem;
+  transition: background-color 0.3s ease;
+  margin: 0 1rem;
+}
+
+#iftin-slideshow button:hover {
+  background-color: #FED3DA;
+}
+
+#iftin-slideshow-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3rem;
+  background-color: rgba(255, 195, 205, 0.7); 
+  color: #333;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 3rem; 
+}
+
+@media (max-width: 768px) {
+  .iftin-card {
+    display: block;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .iftin-image {
+    grid-column: 1;
+    grid-row: 1;
+    margin-bottom: 1rem;
+  }
+
+  .iftin-image h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .iftin-image img {
+    width: 60%;
+    max-width: 15rem;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .iftin-text {
+    grid-column: 1;
+    grid-row: 2;
+    margin: 0 auto;
+    font-size: 1rem;
+    text-align: left; 
+    max-width: 90%;   
+  }
+
+  .iftin-skills {
+    grid-column: 1;
+    grid-row: 3;
+    margin-top: 2rem;
+  }
+
+  /* Projektkort */
+  .iftin-project-card {
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  .iftin-project-image {
+    width: 80%;
+    height: 80%;          
+    max-width: 15rem;   
+    max-height: 15rem; 
+    margin: 0 0 1rem 0;
+    overflow: hidden; 
+  }
+
+  .iftin-project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+  }
+
+  .iftin-project-content {
+    text-align: center;
+  }
+
+  /* Slideshow */
+  #iftin-slideshow {
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+  }
+
+  #iftin-slideshow-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #iftin-slideshow-container img {
+    height: 20rem; 
+  }
+
+  #iftin-slideshow button {
+    font-size: 1.5rem;
+    padding: 0.5rem 0.8rem;
+  }
+
+  #iftin-slideshow-container img:hover, .iftin-project-card:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  /* Rubriker */
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 430px) {
+  #upcomingProjects h1 {
+    font-size: 1.8rem;
+  }
+}
