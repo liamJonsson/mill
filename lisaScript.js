@@ -110,7 +110,7 @@ axios.get('lisaData.json')
         const filter = document.getElementById('filter')
         const sort = document.getElementById('sort')
 
-        
+
         function renderProjects(list) {
             projectContainer.innerHTML = '' 
 
@@ -145,25 +145,22 @@ axios.get('lisaData.json')
             })
         }
 
-       
         renderProjects(projects)
-
         
         function updateList() {
-            let filtered = projects.filter(p =>
-                p.title.toLowerCase().includes(filter.value.toLowerCase())
+            let filtered = projects.filter(project =>
+                project.title.toLowerCase().includes(filter.value.toLowerCase())
             )
-
-            if (sort.value === "asc") {
+            if(sort.value === "asc") {
                 filtered.sort((a, b) => a.title.localeCompare(b.title))
-            } else if (sort.value === "desc") {
+            } 
+            else if(sort.value === "desc") {
                 filtered.sort((a, b) => b.title.localeCompare(a.title))
             }
-
             renderProjects(filtered)
         }
-
-        
         filter.addEventListener('input', updateList)
         sort.addEventListener('change', updateList)
     })
+
+
