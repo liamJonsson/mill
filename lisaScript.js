@@ -71,7 +71,6 @@ nextButton.addEventListener("click", () => {
   showPicture();
 });
 
-
 previousButton.addEventListener("click", () => {
   index--;
   if (index < 0) {
@@ -86,6 +85,7 @@ previousButton.addEventListener("click", () => {
 const popup = document.getElementById('popup');
 const closeButton = document.getElementById('closePopup');
 let shown = false; 
+
 window.addEventListener('scroll', () => {
   if (window.scrollY > 400 && !shown) {
     popup.style.display = 'flex';  
