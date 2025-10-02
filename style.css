@@ -33,8 +33,6 @@ h2{
     font-size: 3.5rem;
 }
 
-
-
 /*Meny*/
 header{
     background-color: #FFF2CC;
@@ -48,7 +46,6 @@ header a{
 
 a img{
     width: 25%;
-    height: auto;
     margin: 7% 5%;
 }
 
@@ -88,10 +85,9 @@ a img{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: auto;
 }
 
-.konditori-mill-container-large-screen{
+.konditori-mill-container{
     display: grid;
     background-color: rgba(255, 242, 204, 0.5);
     border-radius: 50px;
@@ -101,54 +97,42 @@ a img{
     grid-template-columns: 50% 50%;
     grid-template-rows: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
     margin-top: 10%;
-    height: auto;
 }
 
-.konditori-mill-container-small-screen{
-    display: none;
+.mill-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .mill-item1{ /*Rubrik*/
     grid-row: 1 / span 2;
     grid-column: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .mill-item2{ /*Bild*/
     grid-row: 1 / span 4;
     grid-column: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 
 .mill-item3{ /*Paragraf*/
     grid-row: 3 / span 6;
     grid-column: 1;
-    display: flex;
-    justify-content: center;
 }
 
 .mill-item3 p{
     width: 75%;                
-    text-align: start;  
-    margin-left: 3%;      
+    text-align: start;      
 }
 
 .mill-item4{ /*Bild*/
     grid-row: 5 / span 4;
     grid-column: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .mill-item2 img, .mill-item4 img{
     width: 70%;
-    height: auto;
     border-radius: 25px;
     margin: 3%;
 }
@@ -172,14 +156,9 @@ p{
     padding-top: 15%; 
 }
 
-.services-container-large-screen{
+.services-container{
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
     padding-bottom: 10%;
-}
-
-.services-container-small-screen{
-    display: none;
 }
 
 .service-items{
@@ -189,17 +168,16 @@ p{
     text-align: center;
     margin: 0 15%;
     border-radius: 25px;
-    height: 95%;
     box-shadow: 0 5px 5px rgba(0,0,0,0.1);
 }
 
 .service-items h2{
-    margin: 5%;
+    padding-top: 5%;
     color: #f1b2bc;
 }
 
 .service-items p{
-    padding: 7%;
+    padding: 0 7% 7% 7%;
 }
 
 .service-item1{
@@ -210,7 +188,6 @@ p{
     grid-column: 2;
 }
 
-
 .service-item3{
     grid-column: 3;
 }
@@ -220,19 +197,15 @@ p{
 }
 
 /*Våra anställda - Sektion*/
-.employees-container-large-screen{
+.employees-container{
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
 }
 
-.employees-container-small-screen{
-    display: none;
-}
-
 #employees h1{
     color: #FED3DA;
-    margin: 10% 0 0 0;
+    margin-top: 10%;
 }
 
 .employee-items{
@@ -246,14 +219,12 @@ p{
     display: grid;
     grid-template-rows: 25% 25% 50%;
     grid-template-columns: 50% 50%;
-    height: 500px;
 }
 
 .employee-items p{
     width: 80%;
     text-align: left;
     margin: 0 12%;
-    font-size: 1.25rem;
 }
 
 
@@ -298,11 +269,13 @@ p{
 .employee-name-item3{ /*Bilden*/
     grid-column: 1;
     grid-row: 3;
+    display: flex;
+    align-items: end;
+    justify-content: center;
 }
 
 .employee-name-item3 img{
-    width: 74%;
-    height: auto;
+    width: 75%;
 }
 
 .employee-name-item4{ /*Knapp*/
@@ -316,7 +289,8 @@ p{
 .employee-name-item4 button{ /*Knapp*/
     width: 175px;
     height: 175px;
-    border-radius: 100%;
+    border-radius: 50%;
+    cursor: pointer;
     border: none;
     background-color: #FED3DA;
     box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
@@ -324,7 +298,6 @@ p{
     justify-content: center;
     align-items: center;
     font-size: 1.1rem;
-    text-align: center;
     font-family: 'Instrument serif', sans-serif;
     color: #5F3917;
 }
@@ -342,13 +315,8 @@ footer img{
     width: 20%;
 }
 
-
-
-
-
 /* Kontakta oss */
 #contact{
-    display: block;
     padding-left: 5%;
     width: 60%;
 }
@@ -451,8 +419,6 @@ form button{
     }
 
     header{
-        background-color: #FFF2CC;
-        box-shadow: 0 5px 5px rgba(0,0,0,0.1);
         padding: 5% 3% 3% 5%;
     }
 
@@ -461,19 +427,8 @@ form button{
     }
 
     /*Konditori Mill - Sektion mobilanpassning*/
-    .konditori-mill-container-large-screen{
-        display: none;
-    }
-
-    .konditori-mill-container-small-screen{
+    .konditori-mill-container{
         display: block;
-        background-color: rgba(255, 242, 204, 0.5);
-        border-radius: 50px;
-        border: 5px solid;
-        border-color: #C8EBCB;
-        width: 85%;
-        margin-top: 10%;
-        height: auto;
     }
 
     .mill-item1 h2{ 
@@ -491,40 +446,23 @@ form button{
     /*Våra tjänster - Sektion mobilanpassning*/
     #ourServices{
         background-size: contain;
-        background-repeat: no-repeat;
-        background-position: top center;
-    }
-    
-    #ourServices h1{
-        color: #FEFFE2;
-        padding-top: 15%; 
     }
 
-    .services-container-small-screen{
+    .services-container{
         display: block;
         background-color: #A1DAA6;
         padding-bottom: 10%;
     }
 
-    .services-container-large-screen{
-        display: none;
-    }
-
     /*Våra anställda - Sektion mobilanpassning*/    
+
+    .employees-container{
+        display: block;
+        margin-top: 10%;
+    }
 
     .employee-items{
         margin: 10% auto;
-        height: 375px;
-    }
-
-    .employee-name-item3{ /*Bild*/
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-    }
-
-    .employee-name-item4{
-        justify-content: center;
     }
 
     .employee-name-item4 button{ /*Knapp*/
@@ -532,27 +470,21 @@ form button{
         height: 100px;
         font-size: 0.8rem;
     }
-    
-    .employees-container-small-screen{
-        display: block;
-        margin-top: 10%;
-        height: auto;
-    }
 
-    .employees-container-large-screen{
-        display: none;
+    /*Footer*/
+    footer img{
+        width: 30%;
     }
 
     /* Kontakta oss mobilanpassning */
 
     form label{
         font-size: 1.1rem;
-
     }
 
     form input, form textarea{   
-    width: 70%;
-    font-size: 0.9rem;
+        width: 70%;
+        font-size: 0.9rem;
     }
 
     form p{
