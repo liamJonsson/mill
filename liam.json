@@ -1,27 +1,27 @@
 [
   {
     "title": "Bröllopstårta i tre våningar",
-    "client": "Emma & Johan",
+    "customer": "Emma & Johan",
     "description": "En klassisk vit bröllopstårta med sockerblommor och smak av vanilj, hallon och citron."
   },
   {
     "title": "Specialdesignad födelsedagstårta",
-    "client": "Familjen Nilsson",
+    "customer": "Familjen Nilsson",
     "description": "En färgstark tårta med chokladbottnar, jordgubbsfyllning och dekoration inspirerad av barnets favoritdjur."
   },
   {
     "title": "Catering av småkakor",
-    "client": "Företaget EkonomiPartner",
+    "customer": "Företaget EkonomiPartner",
     "description": "En leverans av blandade småkakor och bakverk till ett företagsevent med 150 gäster."
   },
   {
     "title": "Julbordets dessertbuffé",
-    "client": "Restaurang Gläntan",
+    "customer": "Restaurang Gläntan",
     "description": "En buffé med pepparkakscheesecake, saffranspannacotta och chokladtryfflar anpassad för julfesten."
   },
   {
     "title": "Konditoriets nya signaturbakelse",
-    "client": "Mill Konditori",
+    "customer": "Mill Konditori",
     "description": "Framtagning av en ny bakelse med kombination av passionsfrukt, mörk choklad och maräng."
   }
 ]
