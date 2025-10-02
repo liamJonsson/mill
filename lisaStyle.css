@@ -1,0 +1,383 @@
+/* Om Lisa */
+.lisa-container{
+    display: grid;
+    grid-template-columns: 33% 33% 34%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+
+}
+
+/* Rubrik Lisa Skarf */
+#lisa h2{
+    margin: 5% auto 0 11%;  
+}
+
+/* Bild */
+.lisa-item1{
+    grid-row: 1 / span 3;
+    grid-column: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+    background-color: #FEFFEB;
+    border: 5px solid;
+    border-color: #FFF2CC;
+    border-radius: 25px;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+
+    width: 70%;
+    height: 100%;
+
+    margin: auto;
+}
+
+.lisa-item1 img{
+    width: 75%;
+    height: auto;
+}
+
+
+/* Stycke 1 */
+.lisa-item2{
+    grid-row: 1 / span 3;
+    grid-column: 2;
+    display: flex;
+    justify-content: left;
+    width: 80%;
+    
+}
+
+/* Stycke 2 */
+.lisa-item3{
+    grid-row: 4 / span 2;
+    grid-column: 1 / span 2;
+    width: 82%;
+    margin: 2% 0 0 8%;
+}
+
+.lisa-container p{
+    text-align: justify;
+    line-height: 135%;
+}
+
+
+
+
+
+
+/* Skillbars */ 
+
+.skills{
+    grid-column: 3;
+    margin: 0 10%;
+}
+
+.lisa-item4{
+    grid-row: 1;
+    
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.lisa-item5{
+    grid-row: 2;
+
+}
+
+.lisa-item6{
+    grid-row: 3;
+}
+
+.lisa-item7{
+    grid-row: 4;
+}
+
+.lisa-item8{
+    grid-row: 5;
+}
+
+h3{
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: 150;
+}
+
+.skill-bar{
+  width: 100%;
+  background: #FFE69D;
+  border-radius: 15px;
+  height: 15%;
+}
+
+.skill-fill{
+  height: 100%;
+  width: 0;           
+  border-radius: 15px;
+  transition: width 2s; 
+  background: #5F3917;     
+}
+
+.skill-fill p{
+    color: #FEFFE2;
+    font-size: 90%;
+    text-align: center;
+    margin: 0;
+    padding-top: 0.5%;
+}
+
+.animate .breadbaking{ 
+    width: 95%; 
+}
+
+.animate .baking{ 
+    width: 75%; 
+}
+
+.animate .decorating{ 
+    width: 80%; 
+}
+
+.animate .taste{ 
+    width: 90%; 
+}
+
+
+
+
+
+
+/* Lisas projekt */
+#project-container{
+    margin-left: 5%;
+}
+
+.project-item1{
+    background-color: #FFF2CC;
+    width: 90%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+
+}
+
+.project-item{
+    background-color: #FEFFEB;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-in-out;
+    width: 29%;
+    height: 30vh;
+    display: inline-block;
+    margin: 2% 3.7% 0 0; 
+}
+
+.project-item:hover{
+    transform: scale(1.05);
+}
+
+
+.project-title h3, .project-description p, .project-customer h3{
+    padding: 0 2%;
+}
+
+
+
+
+
+
+/* Bildspel */
+.slideshow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1%;
+  margin: 5% 0 10% 0;
+}
+
+.slideshow img {
+  width: 40%;
+  height: auto;
+  border: 15px solid #5F3917;
+  border-radius: 8px;
+}
+
+.slideshow button {
+  background-color: #FFF2CC;
+  border: 3px solid #5F3917;
+  font-size: 80%;
+  cursor: pointer;
+  padding: 1%;
+  border-radius: 50%;
+  width: 3.4%;
+  height: 5%;
+}
+
+.slideshow button:hover {
+  background-color: #FFE69D;
+}
+
+
+
+
+
+/* Popup fönster */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: none;             
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+
+.popup-content {
+  background: #FFF5F5;
+  padding: 20px;
+  border-radius: 10px;
+  width: 350px;
+  max-width: 90%;
+  text-align: center;
+  transform: scale(0.7);     
+  opacity: 0;
+  transition: all 0.5s ease; 
+}
+
+.popup.show .popup-content {
+  transform: scale(1);
+  opacity: 1;
+}
+
+#closePopup{
+    background: #FED3DA;
+    font-family: 'Instrument Serif', sans-serif;
+    font-size: 1rem;
+
+}
+
+
+
+/* Filtrera och Sortera */
+#filter{
+    margin: 1% 1% 1% 5%;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    #lisa h2{
+        margin: 2% 0;
+        text-align: center;
+        font-size: 4rem;
+    }
+
+    .lisa-container{
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 10.1% 10.1% 10.1% 10.1% 10.1% 10.1% 10.1% 10.1% 10.2%;
+        height: 600px;
+    }
+
+    .lisa-item1{
+        grid-row: 1 / span 5;
+        width: 85%;
+        height: 85%;
+    }
+
+    .lisa-item1 img{
+        width: 90%;
+        height: auto;
+    }
+
+    .lisa-item2{
+        grid-row: 6 / span 2;
+        grid-column: 1 / span 2;  
+    }
+
+    .lisa-item3{
+        grid-row: 8 / span 2;
+        grid-column: 1 / span 2;
+    }
+
+    .small-screen-style{
+        width: 90%;
+        margin: 5% 5%;
+    }
+
+    .lisa-container p{
+        line-height: 100%;
+        font-size: 0.7rem;
+    }
+
+    .lisa-item4{
+        align-items: center;
+    }
+
+    .lisa-item4 h1{
+        font-size: 2rem;
+    }
+
+    .skills{
+        grid-column: 2;  
+    }
+
+    .skills h3{
+        font-size: 0.8rem;
+    }
+
+    .skill-fill p{
+        font-size: 50%;
+        font-weight: 550;
+        text-align: center;
+    }
+
+
+    /* Projekt */
+    .project-item1{
+        height: 7vh;
+    }
+
+    .project-item1 h2{
+        font-size: 2rem;
+    }
+
+    .project-item{
+        width: 95%;
+        height: 10vh;
+        display: block;
+        padding-top: 1%;
+    
+    }
+
+    .project-item:hover{
+        transform: scale(1.05);
+    }
+
+
+    .project-title h3, .project-description p, .project-customer h3{
+        font-size: 70%;
+        padding: 0 2%;
+    }
+
+
+    /* Bildspel */
+    .slideshow img{
+        border: 5px solid #5F3917;
+        border-radius: 4px;
+    }
+
+    .slideshow button{
+        border: 1px solid #5F3917;
+        width: 5%;
+        height: 5%;
+    }
+
+}

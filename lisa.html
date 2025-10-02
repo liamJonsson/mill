@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konditori Mill</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lisaStyle.css">
+    <script src="script.js" defer></script>
+    <script src="lisaScript.js" defer></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Julius+Sans+One&family=Lora:ital,wght@0,400..700;1,400..700&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Story+Script&display=swap" rel="stylesheet"> <!--Meny-font-->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Italianno&family=Julius+Sans+One&family=Lora:ital,wght@0,400..700;1,400..700&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Story+Script&display=swap" rel="stylesheet"> <!--Rubriker-->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Serif:ital@0;1&family=Italianno&family=Julius+Sans+One&family=Lora:ital,wght@0,400..700;1,400..700&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Story+Script&display=swap" rel="stylesheet"> <!--Brödtext-->
+</head>
+<body>
+    <header>
+        <div id="menu-small-screen">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" id="menuIcon">&#9776;</label>
+            <ul id="menu">
+                <li><a href="index.html">Startsida</a></li>
+                <li><a href="index.html#employees">Våra anställda</a></li>
+                <li><a href="contact.html">Kontakta oss</a></li>
+            </ul>
+        </div>
+        <div id="menu-large-screen">
+            <div class="item1">
+                <a href="index.html"><img src="pictures/logo.png" alt="Logotyp"></a> 
+            </div>
+            <div class="item2">
+                <a href="index.html#employees">Våra anställda</a>
+            </div>
+            <div class="item3">
+                <a href="contact.html">Kontakta oss</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="lisa">
+        <h2>Lisa Skarf</h2>
+        <div class="lisa-container">
+            <div class="lisa-item1"> 
+                <img src="pictures/lisa.png" alt="Lisa">
+            </div>
+            <div class="lisa-item2 small-screen-style"> 
+                <p>Jag heter Lisa och arbetar som bagare på Konditori Mill, där jag framför allt ägnar mig åt brödbakning, något som är både min största passion och specialitet. För mig handlar bröd inte bara om att mätta magen, utan om att skapa en smakupplevelse som gör skillnad i vardagen. Jag strävar alltid efter att utveckla recept och tekniker för att uppnå den perfekta balansen mellan smak, textur och doft. Mina kollegor brukar säga att jag har en särskild känsla för degar, och jag lägger stor stolthet i att varje limpa, baguette eller fralla som lämnar ugnen ska hålla högsta kvalitet. Även om brödbakning är mitt hjärta, har jag också erfarenhet av att göra bakelser och dekorera tårtor och andra sötsaker. Jag tycker om att varva det rustika och enkla i brödet med det mer kreativa och lekfulla som bakelserna erbjuder. Det ger mig möjlighet att vara både precis och fantasifull i mitt arbete. </p>
+            </div>
+            <div class="lisa-item3 small-screen-style"> 
+                <p>På Konditori Mill vill jag bidra till att våra gäster inte bara får något gott att äta, utan även känner sig välkomna och inspirerade. Mitt mål är att varje bröd och bakelse ska sprida samma värme som jag själv känner när jag står vid bakbordet. Jag hämtar gärna inspiration från resor, möten med människor och olika matkulturer, och jag tycker om att tolka klassiska recept på nya sätt. På så vis kan jag förena tradition och innovation och skapa produkter som överraskar samtidigt som de känns välbekanta. För mig är bakning en livslång resa, där varje dag ger chansen att lära, växa och dela glädjen i hantverket med andra.</p>
+            </div> 
+            <div class="lisa-item4 skills">
+                <h1>S K I L L S</h1>
+            </div>     
+
+            <div class="lisa-item5 skills">
+                <h3>Brödbakning</h3>
+                <div class="skill-bar">
+                    <div class="skill-fill breadbaking">
+                        <p>95%</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lisa-item6 skills">
+                <h3>Bakning</h3>
+                <div class="skill-bar">
+                    <div class="skill-fill baking">
+                        <p>75%</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lisa-item7 skills">
+                <h3>Dekorering</h3>
+                <div class="skill-bar">
+                    <div class="skill-fill decorating">
+                        <p>80%</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lisa-item8 skills">
+                <h3>Smakkomposition</h3>
+                <div class="skill-bar">
+                    <div class="skill-fill taste">
+                        <p>90%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="project-item1">
+            <h2>Lisas projekt</h2>
+        </div>
+        <input type="text" id="filter" placeholder="Sök efter projekt">
+        <select id="sort">
+            <option value="asc">Sortera A&ndash;Ö</option>
+            <option value="desc">Sortera Ö&ndash;A</option>
+        </select>
+        <div id="project-container">  
+
+        </div>
+    </section>
+
+    <div class="slideshow">
+        <button id="previous">⟨</button>
+        <img id="slide" src="lisaPictures/bread.png" alt="Bildspel">
+        <button id="next">⟩</button>
+    </div>
+
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <p>20/11 kl 12:00 anordnar Lisa en brödbakningskurs på Konditori Mill. 
+                Besök henne och resten av gänget och lär dig baka riktigt goda frallor!</p>
+                <button id="closePopup">Stäng</button>
+            </div>
+        </div>
+
+    <footer>
+        <img src="pictures/logo_text.png" alt="Logotyp med text">
+    </footer>
+</body>
+</html>

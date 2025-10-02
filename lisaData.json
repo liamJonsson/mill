@@ -1,0 +1,37 @@
+[
+    {
+        "title": "Nytt sortiment av surdegsbröd",
+        "description": "Jag tog fram ett sortiment av surdegsbröd som kombinerar traditionella metoder med moderna smaker. Det ledde till ökad försäljning och fler återkommande kunder.",
+        "customer": "Kund: Konditori Mill"
+    },
+
+    {
+        "title": "Bröllopstårta för 120 gäster",
+        "description": "Jag ansvarade för design, bakning och dekoration av en stor bröllopstårta. Tårtan hade flera våningar, med både klassiska och unika smakkombinationer.",
+        "customer": "Kund: Familjen Andersson"
+    },
+
+    {
+        "title": "Julkampanj: “Smaker från förr”",
+        "description": "Jag utvecklade en serie bakverk inspirerade av klassiska julrecept. Kampanjen gav konditoriet en varm och nostalgisk profil under decembermånad.",
+        "customer": "Kund: Konditori Mill"
+    },
+
+    {
+        "title": "Företagsevent med kaffebröd",
+        "description": "Jag skapade ett varierat utbud av kaffebröd till ett större personalmöte. Projektet krävde effektiv planering för att leverera både kvalitet och volym.",
+        "customer": "Kund: NetSolutions"
+    },
+
+    {
+        "title": "Dekorerade barnbakelser",
+        "description": "Jag bakade och dekorerade fantasifulla bakelser med djurmotiv till barnens sommarfest. Fokus låg på färg, lekfullhet och allergivänliga alternativ.",
+        "customer": "Kund: Förskolan Solrosen"
+    },
+
+    {
+        "title": "Veganskt fikautbud för café",
+        "description": "Jag tog fram ett smakrikt veganskt sortiment av bakverk, vilket ökade kundnöjdheten och lockade fler återkommande gäster.",
+        "customer": "Kund: Café Grönska"
+    }
+]
