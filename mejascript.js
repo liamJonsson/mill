@@ -14,12 +14,10 @@ const pictureCount = document.getElementById('picture-count');
 
 let currentIndex = 0;
 
-
-
 const updateSlideshow = () => {
     slideshowPicture.src = pictures[currentIndex];
     pictureCount.textContent = (currentIndex + 1) + ' / ' + pictures.length;
-}
+};
 
 updateSlideshow();
 
@@ -56,43 +54,24 @@ window.addEventListener('load', () => {
 });
 
 //Förflyttning skillbar & slideshow
-
 const skillbar = document.getElementById('skillbar-container');
 const slideshow = document.getElementById('slideshow-container');
-const skillbarSlideshowSection = document.getElementById('skillbar-slideshow-section');
 
 window.addEventListener("scroll", () => {
-    const positionSizeSkillbar = skillbar.getBoundingClientRect();
-
-    if(positionSizeSkillbar.top < window.innerHeight - 100 && positionSizeSkillbar.bottom > 0) {
+    if(window.scrollY > 400){
         skillbar.classList.add("move");
-    }
-
-    else{
-        skillbar.classList.remove("move");
-    }
-
-    const positionSizeSlideshow = slideshow.getBoundingClientRect();
-
-    if(positionSizeSlideshow.top < window.innerHeight - 100 && positionSizeSlideshow.bottom > 0) {
         slideshow.classList.add("move");
-    }
-
-    else{
+    }else{
+        skillbar.classList.remove("move");
         slideshow.classList.remove("move");
     }
-
-}
-
-);
+});
 
 //Projekt
 
 const projectsContainer = document.getElementById('projects-container');
 const filtering = document.getElementById('filtering');
 const sorting = document.getElementById('sorting');
-
-
 
 const showProjects = () => {
 
@@ -101,7 +80,6 @@ const showProjects = () => {
     axios.get('mejadata.json').then(response => {
         let projects = response.data;
 
-        
         if(filtering.value.trim() !== "") {
             projects = projects.filter(project => 
             project.title.toLowerCase().includes(filtering.value.trim().toLowerCase())

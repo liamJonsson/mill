@@ -26,7 +26,6 @@ p{
     background-color: rgba(255, 204, 226, 0.305);
     border-radius: 15px;
     box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1);
-    
 }
 
 #about-meja-item1{ /*Rubrik*/
@@ -37,7 +36,6 @@ p{
     justify-content: center;
     position: relative;
     bottom: -20%;
-   
 }
 
 #about-meja-item2{ /*bild*/
@@ -46,7 +44,6 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 
 #about-meja-item2 img{
@@ -72,7 +69,6 @@ p{
 #about-meja-item3 p{
     width: 85%;
 }
-
 
 /* skillbar slideshow*/
 
@@ -103,7 +99,6 @@ p{
       transform: translateX(0);
 }
 
-
 /*Bildspel*/
 
 #slideshow-container{
@@ -111,8 +106,8 @@ p{
     grid-template-rows: auto auto;
     margin: auto;
     transform: translateX(150%);
-  
 }
+
 #slideshow-container img{
     grid-row: 1;
     width: 40%;
@@ -145,7 +140,6 @@ p{
     color: #5F3917;
 }
 
-
 /*Skillbar*/
 #skillbar-container{
     box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
@@ -166,7 +160,6 @@ p{
 #skillbar-container h3{
     text-align: center;
     font-size: 1.6rem;
-    
 }
 
 .skillbar-title{
@@ -194,12 +187,20 @@ p{
     transition: width 5s ease-out;
 }
 
-#fill-cupcake.skillbar-filled { width: 95%;}
-#fill-efficiency.skillbar-filled { width: 60%;}
-#fill-precision.skillbar-filled { width: 85%;}
-#fill-creativity.skillbar-filled { width: 70%;}
+#fill-cupcake.skillbar-filled {
+    width: 95%;
+}
 
+#fill-efficiency.skillbar-filled {
+    width: 60%;
+}
 
+#fill-precision.skillbar-filled {
+    width: 85%;
+}
+#fill-creativity.skillbar-filled {
+    width: 70%;
+}
 
 /*Projekten*/
 
@@ -207,8 +208,6 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    
 }
 
 #filtering{
@@ -216,7 +215,6 @@ p{
     border-radius: 5px;
     background-color: white;
     font-family: 'Julius Sans One', sans-serif;
-
 }
 
 #sorting{
@@ -224,12 +222,10 @@ p{
     border-radius: 5px;
     background-color: white;
     font-family: 'Julius Sans One', sans-serif;
-
 }
 
 .projects-container{
     background-color: #FFB992;
-    
 }
 
 .project{
@@ -272,7 +268,7 @@ p{
     grid-column: 2;
     grid-row: 3;
     justify-self: end;
-     margin: 0;
+    margin: 0;
 }
 
 .grid-description{
@@ -297,12 +293,11 @@ p{
     
     /*Om Meja*/
     .about-meja-container{
-    display: block;
+        display: block;
     }
 
     #about-meja-item3 {
         margin: 0 auto;
-        
     }
 
     /*skillbar & slideshow*/
@@ -324,7 +319,6 @@ p{
     #slideshow-container img{
         width: 60%;
         height: auto;
-    
     } 
 
     #slideshow-buttons{
@@ -353,7 +347,6 @@ p{
         width: 60%;
         height: auto;
         margin: 5% 0 0 -2%;
-        
     }
 
     .grid-title{
@@ -372,15 +365,11 @@ p{
     .grid-image{
         grid-column: 1;
         grid-row: 1;
-        
     }
 
     /* footer*/
     footer img {
-        width: 30%;
         height: auto;
         margin-bottom: 10%;
     }
-        
-
 }
