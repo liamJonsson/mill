@@ -159,7 +159,6 @@ h3{
     box-shadow: 0 5px 5px rgba(0,0,0,0.1);
     transition: all 0.3s ease-in-out;
     width: 29%;
-    height: 30vh;
     display: inline-block;
     margin: 2% 3.7% 0 0; 
 }
@@ -327,10 +326,8 @@ h3{
 
     .project-item{
         width: 95%;
-        height: 10vh;
         display: block;
         padding-top: 1%;
-    
     }
 
     .project-title h3, .project-description p, .project-customer h3{

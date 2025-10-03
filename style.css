@@ -381,7 +381,6 @@ form button{
 }
 
 @media (max-width: 768px){
-
     /*Rubriker*/
     h1{
         font-size: 2.75rem;
@@ -472,6 +471,10 @@ form button{
     }
 
     /*Footer*/
+    footer{
+        margin-bottom: 0;
+    }
+
     footer img{
         width: 30%;
     }
