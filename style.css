@@ -71,8 +71,6 @@ a img{
 
 #menu-small-screen{
     display: none;
-    width: 100%;
-    text-align: right;
 }
 
 #menu-large-screen{
@@ -398,6 +396,7 @@ form button{
     #menu-small-screen{
         display: block;
         text-align: right;
+        width: 100%;
     }
 
     #menu{

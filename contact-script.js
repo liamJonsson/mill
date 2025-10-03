@@ -32,21 +32,17 @@ inputName.addEventListener('input', (event) => {
 
     if(name.length > 1 && /^[A-Za-zÅÄÖåäö\s-]+$/.test(name)) {
         hasValidName = true;
-        nameError.classList.add('visibility-hidden');
-    
+        nameError.classList.add('visibility-hidden');   
     }
 
     else if(name.length === 0){
         hasValidName = false;
-        nameError.classList.add('visibility-hidden');
-            
+        nameError.classList.add('visibility-hidden');           
     }
 
     else{
         hasValidName = false;
         nameError.classList.remove('visibility-hidden');
-
-
     }
   validateForm();
 })

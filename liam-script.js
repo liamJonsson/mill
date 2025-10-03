@@ -38,7 +38,7 @@ window.addEventListener('scroll', () =>{
 })
 axios.get('liam.json')
     .then((response) => {
-        constprojects = response.data
+        const projects = response.data
         const container = document.getElementById('project-container')
         projects.forEach(project => {
             const projectItems = document.createElement('div')

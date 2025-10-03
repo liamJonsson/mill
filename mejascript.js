@@ -82,8 +82,7 @@ const showProjects = () => {
 
         if(filtering.value.trim() !== "") {
             projects = projects.filter(project => 
-            project.title.toLowerCase().includes(filtering.value.trim().toLowerCase())
-        
+            project.title.toLowerCase().includes(filtering.value.trim().toLowerCase())    
         );
         }
 
@@ -121,7 +120,6 @@ const showProjects = () => {
             projectContainer.appendChild(projectImage);
 
             projectsContainer.appendChild(projectContainer);
-
         });
      });
 };
